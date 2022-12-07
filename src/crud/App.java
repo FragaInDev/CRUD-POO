@@ -2,29 +2,22 @@ package crud;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class App extends Application{
 
     @Override
     public void start(Stage stage) throws Exception {
-        //Adicionando tabs no tab pane
-        Tab tPaciente = new Tab("Paciente");
-        Tab tMedico = new Tab("Médico");
-        Tab tClinica = new Tab("Clínica");
-        Tab tEspecialidade = new Tab("Especialidade");
-        Tab tConsulta = new Tab("Consulta");
-        Tab tExame = new Tab("Exame");
-        Tab tProntuario = new Tab("Prontuario");
-        Tab tMedicamento = new Tab("Medicamento");
-        
 
-        TabPane tp = new TabPane();
-        tp.getTabs().addAll(tPaciente, tMedico, tClinica, tEspecialidade, tConsulta, tExame, tProntuario, tMedicamento);
+        GridPane tp = new GridPane();
+        Button btnTest = new Button("CRUD Especialidade");
+        tp.add(btnTest, 0, 0);
+
+
         
-        stage.setScene(new Scene(tp));
+        stage.setScene(new Scene(tp, 800,600));
         stage.show();
     }
 
