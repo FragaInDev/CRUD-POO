@@ -2,7 +2,7 @@ package crud.model;
 
 public class Medico {
     private String crm;
-    private Especialidade especialidade;
+    private int especialidade;
     private String nome;
 
     public String getCrm() {
@@ -12,10 +12,10 @@ public class Medico {
         this.crm = crm;
     }
 
-    public Especialidade getEspecialidade() {
+    public int getEspecialidade() {
         return especialidade;
     }
-    public void setEspecialidade(Especialidade especialidade) {
+    public void setEspecialidade(int especialidade) {
         this.especialidade = especialidade;
     }
 

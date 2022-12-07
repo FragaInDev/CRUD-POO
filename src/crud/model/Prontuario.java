@@ -4,11 +4,11 @@ import java.sql.Date;
 
 public class Prontuario {
     private int id;
-    private Paciente paciente;
-    private Medico medico;
-    private Consulta consulta;
-    private Exame exame;
-    private Medicamento medicamento;
+    private String pacienteCPF;
+    private String medicoCRM;
+    private int consultaID;
+    private int exameID;
+    private int medicamentoID;
     private Date data;
 
     public int getId() {
@@ -18,39 +18,39 @@ public class Prontuario {
         this.id = id;
     }
 
-    public Paciente getPaciente() {
-        return paciente;
+    public String getPaciente() {
+        return pacienteCPF;
     }
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
-    }
-
-    public Medico getMedico() {
-        return medico;
-    }
-    public void setMedico(Medico medico) {
-        this.medico = medico;
+    public void setPaciente(String pacienteCPF) {
+        this.pacienteCPF = pacienteCPF;
     }
 
-    public Consulta getConsulta() {
-        return consulta;
+    public String getMedico() {
+        return medicoCRM;
     }
-    public void setConsulta(Consulta consulta) {
-        this.consulta = consulta;
-    }
-
-    public Exame getExame() {
-        return exame;
-    }
-    public void setExame(Exame exame) {
-        this.exame = exame;
+    public void setMedico(String medicoCRM) {
+        this.medicoCRM = medicoCRM;
     }
 
-    public Medicamento getMedicamento() {
-        return medicamento;
+    public int getConsulta() {
+        return consultaID;
     }
-    public void setMedicamento(Medicamento medicamento) {
-        this.medicamento = medicamento;
+    public void setConsulta(int consultaID) {
+        this.consultaID = consultaID;
+    }
+
+    public int getExame() {
+        return exameID;
+    }
+    public void setExame(int exameID) {
+        this.exameID = exameID;
+    }
+
+    public int getMedicamento() {
+        return medicamentoID;
+    }
+    public void setMedicamento(int medicamentoID) {
+        this.medicamentoID = medicamentoID;
     }
 
     public Date getData() {
