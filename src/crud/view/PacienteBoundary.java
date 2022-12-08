@@ -1,4 +1,6 @@
-import controller.PacienteControl;
+package crud.view;
+
+import crud.controller.PacienteControl;
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
 import javafx.scene.Scene;
@@ -11,7 +13,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import model.Paciente;
+import crud.model.Paciente;
 
 public class PacienteBoundary extends Application {
     private TextField txtCpfPaciente = new TextField("");

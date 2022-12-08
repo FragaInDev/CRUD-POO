@@ -11,7 +11,7 @@ import java.util.List;
 import crud.model.Especialidade;
 
 public class EspecialidadeDAO implements IEspecialidadeDAO {
-    public static final String URL = "jdbc:mariadb://localhost:3306/clinica";
+    public static final String URL = "jdbc:mariadb://localhost:3306/clinica_medica";
     public static final String USER = "root";
     public static final String PASSWORD = "123456";
     private Connection con;

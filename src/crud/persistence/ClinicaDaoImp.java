@@ -1,4 +1,4 @@
-package persistence;
+package crud.persistence;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,12 +8,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Clinica;
+import crud.model.Clinica;
 
 public class ClinicaDaoImp implements IClinicaDao{
     public static final String URL = "jdbc:mariadb://localhost:3306/clinica_medica";
     public static final String USER = "root";
-    public static final String PASSWORD = "";
+    public static final String PASSWORD = "123456";
     private Connection con;
     
     public ClinicaDaoImp() {
@@ -66,7 +66,6 @@ public class ClinicaDaoImp implements IClinicaDao{
 
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return lista;

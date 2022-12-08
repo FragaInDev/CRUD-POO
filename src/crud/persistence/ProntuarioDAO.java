@@ -12,7 +12,7 @@ import crud.model.Prontuario;
 
 public class ProntuarioDAO implements IProntuarioDAO{
 
-    public static final String URL = "jdbc:mariadb://localhost:3306/clinica";
+    public static final String URL = "jdbc:mariadb://localhost:3306/clinica_medica";
     public static final String USER = "root";
     public static final String PASSWORD = "123456";
     private Connection con;

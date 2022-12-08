@@ -1,4 +1,4 @@
-package persistence;
+package crud.persistence;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,13 +8,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Paciente;
+import crud.model.Paciente;
 
 public class PacienteDao implements IPacienteDao {
 
     public static final String URL = "jdbc:mariadb://localhost:3306/clinica_medica";
     public static final String USER = "root";
-    public static final String PASSWORD = "";
+    public static final String PASSWORD = "123456";
     private Connection con;
 
     public PacienteDao() {

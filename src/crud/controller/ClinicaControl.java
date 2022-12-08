@@ -1,4 +1,4 @@
-package controller;
+package crud.controller;
 
 import java.util.List;
 
@@ -8,9 +8,9 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Clinica;
-import persistence.ClinicaDaoImp;
-import persistence.IClinicaDao;
+import crud.model.Clinica;
+import crud.persistence.ClinicaDaoImp;
+import crud.persistence.IClinicaDao;
 
 public class ClinicaControl {
     private IntegerProperty idProperty = new SimpleIntegerProperty(0);

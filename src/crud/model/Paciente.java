@@ -1,4 +1,4 @@
-package model;
+package crud.model;
 
 public class Paciente {
     private String cpf;

@@ -1,4 +1,4 @@
-package controller;
+package crud.controller;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Paciente;
-import persistence.IPacienteDao;
-import persistence.PacienteDao;
+import crud.model.Paciente;
+import crud.persistence.IPacienteDao;
+import crud.persistence.PacienteDao;
 
 public class PacienteControl {
     private StringProperty cpfProperty = new SimpleStringProperty("");

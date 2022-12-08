@@ -1,4 +1,6 @@
-import controller.ClinicaControl;
+package crud.view;
+
+import crud.controller.ClinicaControl;
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
 import javafx.scene.Scene;
@@ -13,7 +15,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
 import javafx.util.converter.IntegerStringConverter;
-import model.Clinica;
+import crud.model.Clinica;
 
 public class ClinicaBoundary extends Application {
     private TextField txtIdClinica = new TextField("");
@@ -39,7 +41,7 @@ public class ClinicaBoundary extends Application {
         BorderPane bp = new BorderPane();
         GridPane gp = new GridPane();
 
-        Scene scene = new Scene(bp, 400, 300);
+        Scene scene = new Scene(bp, 800, 600);
         bp.setTop(gp);
         bp.setCenter(table);
 
@@ -118,13 +120,13 @@ public class ClinicaBoundary extends Application {
         TableColumn<Clinica, String> col5 = new TableColumn<>("Rua");
         col5.setCellValueFactory(new PropertyValueFactory<Clinica, String>("rua"));
 
-        TableColumn<Clinica, Integer> col6 = new TableColumn<>("Numero");
+        TableColumn<Clinica, Integer> col6 = new TableColumn<>("CEP");
         col6.setCellValueFactory(new PropertyValueFactory<Clinica, Integer>("numEnd"));
 
-        TableColumn<Clinica, String> col7 = new TableColumn<>("Bairro");
+        TableColumn<Clinica, String> col7 = new TableColumn<>("Numero");
         col7.setCellValueFactory(new PropertyValueFactory<Clinica, String>("bairro"));
 
-        TableColumn<Clinica, String> col8 = new TableColumn<>("Cep");
+        TableColumn<Clinica, String> col8 = new TableColumn<>("Bairro");
         col8.setCellValueFactory(new PropertyValueFactory<Clinica, String>("cep"));
 
         

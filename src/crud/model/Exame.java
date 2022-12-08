@@ -1,15 +1,12 @@
 package crud.model;
 
-import java.sql.Time;
-import java.sql.Date;
-
 public class Exame {
     private int id;
-    private Paciente paciente;
-    private Medico medico;
-    private Clinica clinica;
-    private Date data;
-    private Time hora;
+    private String paciente;
+    private String medico;
+    private int clinica;
+    private String data;
+    private String hora;
     private String diagnostico;
 
     public int getId() {
@@ -19,38 +16,38 @@ public class Exame {
         this.id = id;
     }
 
-    public Paciente getPaciente() {
+    public String getPaciente() {
         return paciente;
     }
-    public void setPaciente(Paciente paciente) {
+    public void setPaciente(String paciente) {
         this.paciente = paciente;
     }
 
-    public Medico getMedico() {
+    public String getMedico() {
         return medico;
     }
-    public void setMedico(Medico medico) {
+    public void setMedico(String medico) {
         this.medico = medico;
     }
 
-    public Clinica getClinica() {
+    public int getClinica() {
         return clinica;
     }
-    public void setClinica(Clinica clinica) {
+    public void setClinica(int clinica) {
         this.clinica = clinica;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
-    public Time getHora() {
+    public String getHora() {
         return hora;
     }
-    public void setHora(Time hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
 

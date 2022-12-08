@@ -1,8 +1,8 @@
-package persistence;
+package crud.persistence;
 
 import java.util.List;
 
-import model.Paciente;
+import crud.model.Paciente;
 
 public interface IPacienteDao {
 
