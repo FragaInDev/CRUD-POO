@@ -1,21 +1,28 @@
 package crud.model;
 
-import java.sql.Date;
 
 public class Prontuario {
     private int id;
+    private String nome;
     private String pacienteCPF;
     private String medicoCRM;
     private int consultaID;
     private int exameID;
     private int medicamentoID;
-    private Date data;
+    private String data;
 
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getPaciente() {
@@ -53,10 +60,10 @@ public class Prontuario {
         this.medicamentoID = medicamentoID;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 }
