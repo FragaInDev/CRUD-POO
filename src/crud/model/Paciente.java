@@ -1,12 +1,10 @@
-package crud.model;
-
-import java.sql.Date;
+package model;
 
 public class Paciente {
     private String cpf;
     private String nome;
     private String telefone;
-    private Date dataNascimento;
+    private String dataNascimento;
 
     public String getCpf() {
         return cpf;
@@ -29,10 +27,10 @@ public class Paciente {
         this.telefone = telefone;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 }
